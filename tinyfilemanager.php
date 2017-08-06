@@ -190,7 +190,7 @@ if (isset($_POST['ajax']) && !FM_READONLY) {
 
     //search : get list of files from the current folder
     if(isset($_POST['type']) && $_POST['type']=="search") {
-        $dir = $_POST['path'];;
+        $dir = $_POST['path'];
         $response = scan($dir);
         echo json_encode($response);
     }
